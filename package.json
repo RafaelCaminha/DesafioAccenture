@@ -1,0 +1,24 @@
+{
+  "name": "desafioaccenture",
+  "version": "1.0.0",
+  "description": "Desafio Accenture - testes BDD da API Book Store com Cypress",
+  "private": true,
+  "scripts": {
+    "test": "cypress run --browser chrome",
+    "test:api": "cypress run --spec Features/api.feature",
+    "test:frontend": "cypress run --browser chrome --spec Features/frontend.feature",
+    "test:janelas": "cypress run --browser chrome --spec Features/frontend.feature --expose tags=@janelas",
+    "test:tabelas": "cypress run --browser chrome --spec Features/frontend.feature --expose tags=@tabelas",
+    "test:progresso": "cypress run --browser chrome --spec Features/frontend.feature --expose tags=@progresso",
+    "test:ordenacao": "cypress run --browser chrome --spec Features/frontend.feature --expose tags=@ordenacao",
+    "test:open": "cypress open"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^28.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "cypress": "^16.2.0",
+    "esbuild": "^0.28.2"
+  }
+}

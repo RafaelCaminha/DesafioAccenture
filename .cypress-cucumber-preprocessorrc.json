@@ -1,0 +1,5 @@
+{
+  "stepDefinitions": ["API/**/*.steps.js", "Frontend/**/*.steps.js"],
+  "json": { "enabled": true, "output": "reports/cucumber.json" },
+  "html": { "enabled": true, "output": "reports/cucumber.html" }
+}
